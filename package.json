@@ -1,0 +1,31 @@
+{
+  "name": "@scsiva1991/array-filter",
+  "version": "0.0.1",
+  "description": "A small library to filter array of objects and return as a simple array",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scsiva1991/array-filter.git"
+  },
+  "keywords": [
+    "array",
+    "array",
+    "filter"
+  ],
+  "author": "“Sivakumar <“scsiva1991@gmail.com”>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scsiva1991/array-filter/issues"
+  },
+  "homepage": "https://github.com/scsiva1991/array-filter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}

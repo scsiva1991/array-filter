@@ -20,9 +20,9 @@ An array filter is a simple library to filter two array of objects
     var result1 = filter.getIncludedObjs( array1, array2, key );
     console.log( result1 ); //[{id:1}]
 
-    var result1 = filter.getExcludedObjs( array1, array2, key );
-    console.log( result1 ); //[{id:2},{id:3}]
-
+    var result2 = filter.getExcludedObjs( array1, array2, key );
+    console.log( result2 ); //[{id:2},{id:3}]
+    
 ```
 
 ## Tests

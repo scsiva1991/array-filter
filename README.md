@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/scsiva1991/array-filter.svg?branch=master)](https://travis-ci.org/scsiva1991/array-filter)
+[![Coverage Status](https://coveralls.io/repos/github/scsiva1991/array-filter/badge.svg?branch=master)](https://coveralls.io/github/scsiva1991/array-filter?branch=master)
+
 ## Array Filter
 
 An array filter is a simple library to filter two array of objects
@@ -22,7 +25,7 @@ An array filter is a simple library to filter two array of objects
 
     var result2 = filter.getExcludedObjs( array1, array2, key );
     console.log( result2 ); //[{id:2},{id:3}]
-    
+
 ```
 
 ## Tests

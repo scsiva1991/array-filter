@@ -36,4 +36,20 @@ describe('filter', function() {
         var result = filter.getExcludedObjs('', [{id:1}], 'id');
         expect(result).to.deep.have.same.members([]);
     });
+    it('should get included items in an array', function() {
+        var result = filter.getIncludedItems([1,2,3],[3,4,5]);
+        expect(result).to.deep.have.same.members([3]);
+    });
+    it('if no array is found returns empty array', function() {
+        var result = filter.getIncludedItems('', []);
+        expect(result).to.deep.have.same.members([]);
+    });
+    it('should get included items in an array', function() {
+        var result = filter.getExcludedItems([1,2,3],[3,4,5]);
+        expect(result).to.deep.have.same.members([1,2]);
+    });
+    it('if no array is found returns empty array', function() {
+        var result = filter.getExcludedItems('', []);
+        expect(result).to.deep.have.same.members([]);
+    });
 });

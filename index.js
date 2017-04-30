@@ -40,6 +40,40 @@ module.exports = {
         return r2[key] === r1[key];
       });
     });
+  },
+
+  /**
+   * Filter an array of items from first array list
+   * which are present in array2
+   * and return result as an array
+   * @param {array1} array
+   * @param {array2} array
+   * @return {array}
+   */
+  getIncludedItems: function( array1, array2 ) {
+    if( !Array.isArray(array1) || !Array.isArray(array2) )
+      return [];
+
+    return array1.filter( function(r1) {
+      return array2.indexOf(r1) > -1;
+    });
+  },
+
+  /**
+   * Filter an array of items from first array list
+   * which are absent in array2
+   * and return result as an array
+   * @param {array1} array
+   * @param {array2} array
+   * @return {array}
+   */
+  getExcludedItems: function( array1, array2 ) {
+    if( !Array.isArray(array1) || !Array.isArray(array2) )
+      return [];
+
+    return array1.filter( function(r1) {
+      return array2.indexOf(r1) == -1;
+    });
   }
 
 };

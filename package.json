@@ -1,6 +1,6 @@
 {
   "name": "@scsiva1991/array-filter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small library to filter array of objects and return as a simple array",
   "main": "index.js",
   "engines": {
